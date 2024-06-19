@@ -104,24 +104,15 @@ int main() {
 
     Matrix A(2,2); 
     Matrix B(2,2); 
-
     cout << "Введите матрицу A (2 на 2):" << endl;
     cin >> A;
-
     cout << "Введите матрицу B (2 на 2):" << endl;
     cin >> B;
+    cout << "A + B: " << endl << (A+B);
+    cout << "A - B: " << endl << (A-B);
+    cout << "A * B: " << endl << (A*B);
 
-    cout << "Матрица A: " << endl << A;
-    cout << "Матрица B: " << endl << B;
 
-    Matrix C = A + B;
-    cout << "A + B: " << endl << C;
-
-    C = A - B;
-    cout << "A - B: " << endl << C;
-
-    C = A * B;
-    cout << "A * B: " << endl << C;
 
     return 0;
 }
